@@ -4,9 +4,13 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-4.2.1-dist/css/bootstrap.min.css">
+<!--
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+-->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
   <style>
   	.dark-blue{
   		background: #00b3b3;
@@ -21,8 +25,22 @@
   	}
   	.resize-small{
   		height: 150px;
-  		width: 150px
+  		width: 150px;
   	}
+      .padding-15{
+          padding: 15px;
+      }
+      .zoom {
+  padding: 50px;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 </style>
 </head>
 <body style="background: #e6ffff">
@@ -34,21 +52,23 @@
   
 <div class="container">
   <div class="row" style="padding-top: 20px">
-    <div class="col-sm-4">
-    	<img src="/home/spit/Desktop/g2g/weather.png" class="center-image resize-small" >
+    <div class="col-sm-4 zoom">
+    	<img src="weather-1.png" class="center-image resize-small padding-15">
       <h3 class="text-center">Weather</h3>
     </div>
-    <div class="col-sm-4">
-    	<img src="/home/spit/Desktop/g2g/News.jpg" class="center-image resize-small">
+    <div class="col-sm-4 zoom">
+    	<img src="/news-1.png" class="center-image resize-small padding-15">
       <h3 class="text-center">News</h3>
      </div>
-    <div class="col-sm-4">
-    	<img src="/home/spit/Desktop/g2g/map.jpg" class="center-image resize-small">
+    <div class="col-sm-4 zoom">
+    	<img src="/map-1.png" class="center-image resize-small padding-15">
       <h3 class="text-center">Transport</h3>        
      
     </div>
   </div>
 </div>
+    <p class="text-center">Give a Feedback</p>
+    
 
 </body>
 </html> 
