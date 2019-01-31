@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Good 2 Go</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="../bootstrap-4.2.1-dist/css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">-->
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+<!--
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+-->
+    
+    <style>
+        .dark-blue{
+            background: #00b3b3;
+        }
+        .light-blue{    
+  		    background: #b3ffff;
+        }
+        .center-image{
+  		    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .resize-small{
+  		    height: 150px;
+  		    width: 150px;
+        }
+        .padding-15{
+            padding: 15px;
+        }
+        .zoom {
+            padding: 50px;
+            transition: transform .2s; /* Animation */
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        .zoom:hover {
+            transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+        }
+    </style>
+</head>
+<body style="background: #e6ffff">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Good2Go</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Weather</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#">Travel</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="jumbotron text-center dark-blue" >
+        <h1 >Good 2 Go!</h1>
+        <p>Out For Shopping Food Or Show Here With Us You're #Good2Go</p> 
+    </div>
+    <div class="container" style="margin-bottom: 110px">
+        <div class="row" style="padding-top: 20px">
+            <div class="col-sm-4 zoom">
+                <a href="weather.html"><img src="../images/weather-1.png" class="center-image resize-small padding-15"></a>
+                <a href="weather.html"><h3 class="text-center">Weather</h3></a>
+            </div>
+      
+            <div class="col-sm-4 zoom">
+                <img src="../images/news-1.png" class="center-image resize-small padding-15">
+                <h3 class="text-center">News</h3>
+            </div>
+      
+            <div class="col-sm-4 zoom">
+                <img src="../images/map-1.png" class="center-image resize-small padding-15">
+                <h3 class="text-center">Transport</h3>         
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <a href="#" class="btn btn-dark">Give Feedback</a>
+    </div>
+
+</body>
+</html> 
